@@ -1,0 +1,11 @@
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\obj\Debug\ControlCursor.csprojResolveAssemblyReference.cache
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\ControlCursor.dll
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\ControlCursor.pdb
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\mscorlib.dll
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\normidna.nlp
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\normnfc.nlp
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\normnfd.nlp
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\normnfkc.nlp
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\bin\Debug\normnfkd.nlp
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\obj\Debug\ControlCursor.dll
+C:\Users\stephen\Documents\Projects\ControlCursor\ControlCursor\obj\Debug\ControlCursor.pdb
