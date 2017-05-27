@@ -33,6 +33,26 @@ typedef struct point{
 	}
 
 #elif __unix__ 
+	#include <X11/Xlib.h>
+
+	point getCursorPos(void){
+		Window root, child;
+		int rootX, rootY, winX, winY;
+		unsigned int mask;
+
+		Display* dpy = XOpenDisplay(0);
+		Window root_window = XRootWindow(dpy, 0);
+		XQueryPointer(dpy, root_window, &root, &child, &rootX, &rootY, &winX, &winY, &mask); 
+		return (point){rootX, rootY};
+	}
+
+	bool setCursorPos(point p){
+		Display* dpy = XOpenDisplay(0);
+		Window root_window = XRootWindow(dpy, 0);
+		XWarpPointer(dpy, None, root_window, 0, 0, 0, 0, p.x, p.y);
+		XFlush(dpy);
+		return true;
+	}
 
 #else
 #   error "Unknown compiler"
