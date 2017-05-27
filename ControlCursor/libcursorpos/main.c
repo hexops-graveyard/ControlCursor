@@ -19,10 +19,21 @@ typedef struct point{
 	}
 
 #elif __APPLE__
+	#include <ApplicationServices/ApplicationServices.h>
+
+	point getCursorPos(void) {
+		CGEventRef event = CGEventCreate(nil);
+		CGPoint p = CGEventGetLocation(event);
+		CFRelease(event);
+		return (point){p.x, p.y};
+	}
+
+	bool setCursorPos(point p){
+		return CGWarpMouseCursorPosition((CGPoint){p.x, p.y});
+	}
 
 #elif __unix__ 
 
 #else
 #   error "Unknown compiler"
 #endif
-
