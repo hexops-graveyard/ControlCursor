@@ -1,6 +1,3 @@
-*.dll
-*.so
-*.dylib
 *.pdb
 *.o
 *.meta
