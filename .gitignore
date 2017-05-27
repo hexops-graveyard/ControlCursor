@@ -3,3 +3,4 @@
 *.dylib
 *.pdb
 *.o
+*.meta
